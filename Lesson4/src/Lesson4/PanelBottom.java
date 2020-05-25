@@ -40,8 +40,7 @@ public class PanelBottom extends JPanel {
     private void appendToLogFile(String text) {
         try {
             Writer output;
-            output = new BufferedWriter(new FileWriter("./logfile", true));  //clears file every time
-            output.append(text);
+            output = new BufferedWriter(new FileWriter("./logfile", true));
             output.close();
         } catch (IOException e) {
             String msg = "Failed to write to logfile";
