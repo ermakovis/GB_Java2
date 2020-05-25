@@ -67,7 +67,6 @@ public class ClientGUI extends JFrame implements ActionListener, Thread.Uncaught
     }
 
 
-    //Отправлять сообщения в лог по нажатию кнопки
     @Override
     public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
